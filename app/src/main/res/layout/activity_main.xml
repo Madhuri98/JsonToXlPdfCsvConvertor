@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03000000"
+    tools:context=".activities.MainActivity">
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Madhuri"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Name" />
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etname"
+        android:text="ABC"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Note" />
+
+    <EditText
+        android:id="@+id/etPrize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:inputType="number"
+        android:layout_below="@+id/etNote"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Prize" />
+
+    <Button
+        android:id="@+id/btnExcel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPrize"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Convert Excel"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnPDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnExcel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Convert PDF"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPDF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Convert CSV"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
